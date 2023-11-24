@@ -19,7 +19,7 @@ public class BoletoController {
 
     @PostMapping("/registro")
     public ResponseEntity<List<Boleto>> registerTickets(@RequestBody DatoregistroBoleto datoregistroBoleto) {
-        int numberOfTickets = datoregistroBoleto.cantidad();
+        Integer numberOfTickets = datoregistroBoleto.cantidad();
 
         // Genera la cantidad específica de boletos
         List<Boleto> generatedTickets = registrarBoletoService.generateTickets(numberOfTickets);

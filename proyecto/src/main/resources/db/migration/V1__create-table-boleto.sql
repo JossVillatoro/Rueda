@@ -1,0 +1,3 @@
+CREATE TABLE boleto (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+)
